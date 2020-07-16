@@ -1,2 +1,2 @@
 # vertical_accordion
-[Demo Lin](https://vertical-accordion.netlify.app/)
+[Demo Link](https://vertical-accordion.netlify.app/)
