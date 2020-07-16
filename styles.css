@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    user-select: none;
+}
+
+  body{
+    font-family: 'Poppins', sans-serif;
+    background-image: linear-gradient(to right top, #fefcff, #fefdff, #fefeff, #fffeff, #ffffff);
+  }
+
+
+  .container {
+    width: 1320px;
+    margin: 0 auto;
+  }
+
+   h2{
+    text-align: center;
+    margin: 50px auto;
+    text-transform: capitalize;
+  } 
+
+
+  .card_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10vmin; 
+    /* margin: 50px auto; */
+    overflow: hidden; 
+    box-shadow:0 3px 6px rgba(0, 0, 0, .16), 0 1px 2px rgba(0, 0, 0, .23);
+  }
+
+
+  .card {
+    position: relative;
+    display: flex;
+    flex: 1;
+    transition: all 1s ease-in-out; 
+    height: 75vh;
+  }
+
+
+.card:not(:nth-child(5)) {
+    margin-right: 10px;
+  }  
+
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 1s ease-in-out;
+    filter:blur(5px);
+  }
+
+
+  .card_title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    min-width: 100%; 
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+    background: rgba(204, 204, 204, 0.308);
+    padding: 10px;
+    transform: rotate(0deg); 
+    transform-origin: 0% 0%;
+    transition: all .5s ease-in-out;
+    white-space: nowrap;
+    text-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 1px 2px rgba(0, 0, 0, .23); 
+
+ }
+  
+ .card:hover {
+    flex-grow: 10; 
+ }
+
+  .card:hover img { 
+    filter:blur(0);;
+ } 
+
+ .card:hover .card_title {
+    text-align: center;
+    top: calc(100% - (-100px));  
+    color: white;
+    background: initial;
+    font-size: 20px;
+    transform: rotate(-90deg); 
+  }
+
+
+  @media all and (max-width: 1037px){
+    .container{
+        width: auto;
+    }
+
+    .card_wrapper{
+      margin: 4vmin;
+    }
+
+     h2{ 
+      margin: auto;
+      font-size: 16px;
+    }
+   
+    .card_title {
+      font-size: 10px;
+    }
+
+    .card:hover .card_title {
+      text-align: initial;
+      top: initial;  
+      font-size: 20px;
+    }
+  }
+  
+  
+  
